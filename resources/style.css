@@ -20,6 +20,46 @@ body {
   --mdc-theme-secondary: #394a6e;
 }
 
-.mdc-list-item--activated i {
-  color: inherit;
+.mdc-drawer .mdc-list-item--activated {
+  color: #394a6e;
+}
+
+.mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+  color: #394a6e;
+}
+
+#login-div-esq,
+#login-div-dir {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+#login-div-esq {
+  width: 60%;
+}
+
+#login-div-dir {
+  width: 40%;
+}
+
+#login-div-esq {
+  left: 0;
+  background-image: url("./images/login-bg.jpg");
+  background-size: cover;
+}
+#login-div-dir {
+  right: 0;
+  background-color: #f9f9f9;
+}
+
+#login-wrapper {
+  text-align: center;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+}
+#login-form {
+  width: 400px;
+  background-color: #cccccc;
 }
