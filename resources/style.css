@@ -36,11 +36,11 @@ body {
 }
 
 #login-div-esq {
-  width: 60%;
+  width: 45%;
 }
 
 #login-div-dir {
-  width: 40%;
+  width: 55%;
 }
 
 #login-div-esq {
@@ -48,6 +48,7 @@ body {
   background-image: url("./images/login-bg.jpg");
   background-size: cover;
 }
+
 #login-div-dir {
   right: 0;
   background-color: #f9f9f9;
@@ -62,4 +63,13 @@ body {
 #login-form {
   width: 400px;
   background-color: #cccccc;
+}
+
+@media (max-width: 1000px) {
+  #login-div-esq {
+    display: none;
+  }
+  #login-div-dir {
+    width: 100%;
+  }
 }
