@@ -14,7 +14,7 @@ body {
   padding-right: 8px;
   color: white;
 }
-
+@import "@material/textfield/mdc-text-field";
 :root {
   --mdc-theme-primary: #394a6e;
   --mdc-theme-secondary: #394a6e;
@@ -25,6 +25,10 @@ body {
 }
 
 .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+  color: #394a6e;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
   color: #394a6e;
 }
 
@@ -54,15 +58,45 @@ body {
   background-color: #f9f9f9;
 }
 
-#login-wrapper {
+#login-container {
   text-align: center;
   z-index: 5;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
+
+#login-header,
 #login-form {
-  width: 400px;
-  background-color: #cccccc;
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#login-header {
+  margin-top: 15%;
+  background-color: red;
+}
+
+#login-form {
+  margin-top: 5%;
+  background-color: orange;
+}
+
+#divEmail,
+#divSenha,
+#divEntrar {
+  margin-top: 25px;
+}
+
+#loginEmail,
+#loginSenha {
+  width: 300px;
+  padding-top: 10px;
+}
+
+#loginEntrar {
+  height: 54px;
+  width: 300px;
 }
 
 @media (max-width: 1000px) {
@@ -71,5 +105,9 @@ body {
   }
   #login-div-dir {
     width: 100%;
+  }
+  #loginEmail,
+  #loginSenha {
+    width: 400px;
   }
 }
