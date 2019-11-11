@@ -32,6 +32,9 @@ body {
   color: #394a6e;
 }
 
+#loginLogo {
+  max-width: 100px;
+}
 #login-div-esq,
 #login-div-dir {
   height: 100%;
@@ -74,12 +77,12 @@ body {
 
 #login-header {
   margin-top: 15%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #login-form {
-  margin-top: 5%;
-  background-color: orange;
+  /* 
+  background-color: orange; */
 }
 
 #divEmail,
